@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class AddPlacesScreen extends StatefulWidget {
-  const AddPlacesScreen({super.key});
+class AddPlaceScreen extends StatefulWidget {
+  const AddPlaceScreen({super.key});
 
   @override
-  State<AddPlacesScreen> createState() {
-    return _AddPlacesScreenState();
+  State<AddPlaceScreen> createState() {
+    return _AddPlaceScreenState();
   }
 }
 
-class _AddPlacesScreenState extends State<AddPlacesScreen> {
+class _AddPlaceScreenState extends State<AddPlaceScreen> {
   final _formKey = GlobalKey<FormState>();
   var _enteredPlace = '';
   @override
