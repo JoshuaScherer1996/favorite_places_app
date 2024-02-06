@@ -1,16 +1,6 @@
-import 'package:favorite_places_app/screens/add_place_screen.dart';
+import 'package:favorite_places_app/screens/places_screen.dart';
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
-
-/* Here come the challenges:
-   1) Places Model -> DONE
-   2) Places Screen -> DONE
-   3) Add Places Screen
-   4) Adding Riverpod Provider
-   5) Adding Places and Diplaying them with Provider
-   6) Place Details Screen
-   */
 
 final colorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,
@@ -48,7 +38,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Great Places',
       theme: theme,
-      home: const AddPlaceScreen(),
+      home: const PlacesScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
