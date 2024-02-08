@@ -18,6 +18,15 @@ class _LocationInputState extends State<LocationInput> {
   PlaceLocation? _pickedLocation;
   var _isGettingLocation = false;
 
+  String get locationImage {
+    if (_pickedLocation == null) {
+      return '';
+    }
+    final lat = _pickedLocation!.latitude;
+    final long = _pickedLocation!.longitude;
+    return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$long&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:B%7C$lat,$long&key=AIzaSyDwxyjyCz-vuG0wGWyu8rkDGzkiOn65xxA';
+  }
+
   void _getCurrentLocation() async {
     Location location = Location();
 
@@ -59,11 +68,9 @@ class _LocationInputState extends State<LocationInput> {
     final responseData = json.decode(response.body);
     final address = responseData['results'][0]['formatted_address'];
 
-    print('------------------------------------- Here is the adress: $address');
-
     setState(() {
       _pickedLocation =
-          PlaceLocation(latitude: lat!, longitude: long!, address: address);
+          PlaceLocation(latitude: lat, longitude: long, address: address);
       _isGettingLocation = false;
     });
   }
@@ -77,6 +84,15 @@ class _LocationInputState extends State<LocationInput> {
             color: Theme.of(context).colorScheme.onBackground,
           ),
     );
+
+    if (_pickedLocation != null) {
+      previewContent = Image.network(
+        locationImage,
+        fit: BoxFit.cover,
+        height: double.infinity,
+        width: double.infinity,
+      );
+    }
 
     if (_isGettingLocation == true) {
       previewContent = const CircularProgressIndicator();
