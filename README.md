@@ -24,3 +24,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Learned how to implement the image picker library on both android and iOS.
 - Used the file widget to convert the xFile type pack to a path we can use in our app.
 - Used the GestureDetector widget to detect input and gestures on widgets that normally wouldn't be able to do that.
+- Used the [location library](https://pub.dev/packages/location) to implement the find user location functionality.
+- Learned how to implement the location library on both android and iOS.
