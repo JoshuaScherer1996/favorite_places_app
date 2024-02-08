@@ -1,16 +1,26 @@
-# favorite_places_app
+# Favorite Places App
 
-A new Flutter project.
+Shopping List is a Flutter app that helps you with your weekly shopping! You can add items on your screen with the fitting category, like meat or vegetable, and the ammount you need to by. This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
-## Getting Started
+## Basic functionality
+- Example line
 
-This project is a starting point for a Flutter application.
+### Screenshots 
+<div align="center">
+  <img src="empty_list.png" alt="Start screen without items" width="200"/>
+  <img src="adding_item.png" alt="Form to input new items" width="200"/>
+  <img src="invalid_input.png" alt="Throwing errors when the input isn't valid" width="200"/>
+  <img src="filled_list.png" alt="Example shopping list with dummy items" width="200"/>
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+### Example walkthrough
+<div align="center">
+  <img src="walkthrough.gif" alt="Walkthrough" width="200"/>
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Topics covered 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Used the [Image Picker library](https://pub.dev/packages/image_picker) to implement the image picker feature
+- Learned how to implement the image picker library on both android and iOS.
+- Used the file widget to convert the xFile type pack to a path we can use in our app.
+- Used the GestureDetector widget to detect input and gestures on widgets that normally wouldn't be able to do that.
