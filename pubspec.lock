@@ -532,7 +532,7 @@ packages:
     source: hosted
     version: "1.2.3"
   riverpod:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: riverpod
       sha256: "548e2192eb7aeb826eb89387f814edb76594f3363e2c0bb99dd733d795ba3589"
@@ -548,7 +548,7 @@ packages:
     source: hosted
     version: "0.5.1"
   riverpod_annotation:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: riverpod_annotation
       sha256: "77e5d51afa4fa3e67903fb8746f33d368728d7051a0b6c292bcee60aeba46d95"
