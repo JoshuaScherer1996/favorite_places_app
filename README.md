@@ -28,3 +28,4 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Learned how to implement the location library on both android and iOS.
 - Used the location library documentation to implement the functionality of getting the users location.
 - Setup the [Google Maps Api](https://console.cloud.google.com/google/maps-apis/discover) to use it for my location functionalities.
+- Used the [Geocoding Api](https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding#reverse-example) from google Maps to translate the latitude and longitude to actual locations (Note: Won't work anymore since I had to disable it for money reasons from the google api. You see how it did work with the old key in the screenshots though).
