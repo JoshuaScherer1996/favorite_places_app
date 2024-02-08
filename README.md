@@ -26,3 +26,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used the GestureDetector widget to detect input and gestures on widgets that normally wouldn't be able to do that.
 - Used the [location library](https://pub.dev/packages/location) to implement the find user location functionality.
 - Learned how to implement the location library on both android and iOS.
+- Used the location library documentation to implement the functionality of getting the users location.
+- Setup the [Google Maps Api](https://console.cloud.google.com/google/maps-apis/discover) to use it for my location functionalities.

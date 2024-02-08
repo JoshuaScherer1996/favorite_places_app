@@ -46,11 +46,6 @@ class _LocationInputState extends State<LocationInput> {
     setState(() {
       _isGettingLocation = false;
     });
-
-    print(
-        '-------------------------Location latitude: ${locationData.latitude}');
-    print(
-        '-------------------------Location longitude: ${locationData.longitude}');
   }
 
   @override
