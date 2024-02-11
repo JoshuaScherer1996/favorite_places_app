@@ -22,7 +22,7 @@ Future<Database> _getDatabase() async {
 class UserPlacesNotifier extends StateNotifier<List<Place>> {
   UserPlacesNotifier() : super(const []);
 
-  void loadPlaces() async {
+  Future<void> loadPlaces() async {
     final db = await _getDatabase();
     final data = await db.query('user_places');
     final places = data
@@ -33,7 +33,7 @@ class UserPlacesNotifier extends StateNotifier<List<Place>> {
             image: File(row['image'] as String),
             location: PlaceLocation(
                 latitude: row['lat'] as double,
-                longitude: row['long'] as double,
+                longitude: row['lng'] as double,
                 address: row['address'] as String),
           ),
         )
@@ -42,7 +42,8 @@ class UserPlacesNotifier extends StateNotifier<List<Place>> {
     state = places;
   }
 
-  void addPlace(String title, File image, PlaceLocation location) async {
+  Future<void> addPlace(
+      String title, File image, PlaceLocation location) async {
     final appDirectory = await syspaths.getApplicationDocumentsDirectory();
     final filename = path.basename(image.path);
     final copiedImage = await image.copy('${appDirectory.path}/$filename');
@@ -51,12 +52,12 @@ class UserPlacesNotifier extends StateNotifier<List<Place>> {
 
     final db = await _getDatabase();
 
-    db.insert('user_places', {
+    await db.insert('user_places', {
       'id': newPlace.id,
       'title': newPlace.name,
       'image': newPlace.image.path,
       'lat': newPlace.location.latitude,
-      'long': newPlace.location.longitude,
+      'lng': newPlace.location.longitude,
       'address': newPlace.location.address,
     });
 
