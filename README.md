@@ -33,3 +33,6 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used the GoogleMap widget to display data from google maps services.
 - Learned about sets being similar to maps. The difference: maps are just a collection of values. It doesn't allow dupilcates.
 - Learned about the null operstor ?? in dart.
+- Used [Path Provider](https://pub.dev/packages/path_provider) to get access to the path where i should store my images so that they won't get deleted by the OS.
+- Used [Path](https://pub.dev/packages/path) to simplify the process of working with file paths. Allows one to construct file paths manually to work on different OS.
+- Used [Sqflite](https://pub.dev/packages/sqflite) to be able to store data on the device using SQL commands.
