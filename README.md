@@ -36,3 +36,4 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Used [Path Provider](https://pub.dev/packages/path_provider) to get access to the path where i should store my images so that they won't get deleted by the OS.
 - Used [Path](https://pub.dev/packages/path) to simplify the process of working with file paths. Allows one to construct file paths manually to work on different OS.
 - Used [Sqflite](https://pub.dev/packages/sqflite) to be able to store data on the device using SQL commands.
+- Used the different functionalities from the three packages above to create a local databse and make the data locally persistent on the device.
