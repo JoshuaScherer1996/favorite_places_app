@@ -30,3 +30,5 @@ Shopping List is a Flutter app that helps you with your weekly shopping! You can
 - Setup the [Google Maps Api](https://console.cloud.google.com/google/maps-apis/discover) to use it for my location functionalities.
 - Used the [Geocoding Api](https://developers.google.com/maps/documentation/geocoding/requests-reverse-geocoding#reverse-example) from google Maps to translate the latitude and longitude to actual locations (Note: Won't work anymore since I had to disable it for money reasons from the google api. You see how it did work with the old key in the screenshots though).
 - Used the [Maps Static Api](https://developers.google.com/maps/documentation/maps-static/overview) from google Maps to create a map snapshot based off of the provided user location.
+- Used the GoogleMap widget to display data from google maps services.
+- Learned about sets being similar to maps. The difference: maps are just a collection of values. It doesn't allow dupilcates.
