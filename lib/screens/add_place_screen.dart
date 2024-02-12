@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:favorite_places_app/models/place.dart';
 import 'package:favorite_places_app/providers/user_places_provider.dart';
 import 'package:favorite_places_app/widgets/image_input.dart';
