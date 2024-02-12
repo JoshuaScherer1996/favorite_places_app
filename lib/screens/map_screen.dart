@@ -73,11 +73,12 @@ class _MapScreenState extends State<MapScreen> {
             : {
                 Marker(
                   markerId: const MarkerId('m1'), // Unique ID for the marker.
+                  // Uses the picked location or falls back to the initial location.
                   position: _pickedLocation ??
                       LatLng(
                         widget.location.latitude,
                         widget.location.longitude,
-                      ), // Uses the picked location or falls back to the initial location.
+                      ),
                 ),
               },
       ),
