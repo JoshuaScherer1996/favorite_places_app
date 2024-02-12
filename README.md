@@ -1,9 +1,16 @@
 # Favorite Places App
 
-Favorite Places is a Flutter app that allows you to keep track of your favorite locations! Take a picture of a place that is special to you and add it's location either through your current location or mark it on the map. That way you can always revisit those memories through accessing your saved places. Best part about it? No internet access needed since everything is stored locally on your device! This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
+Favorite Places is a Flutter app that allows you to keep track of your favorite locations! Take a picture of a place that is special to you and add it's location either through your current location or mark it on the map. That way you can always revisit those memories through accessing your saved places. This code was produced during the completion of the Flutter course [A Complete Guide to the Flutter SDK & Flutter Framework for building native iOS and Android apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130436#overview).
 
 ## Basic functionality
-- Example line
+- List of all your favorite places.
+- A place holds a name, a location and an image.
+- On a detail screen you see the name, the image and the location.
+- Tapping on the image opens the location on the map.
+- Create new places for your list by filling out the form.
+- Take pictures and save them to the app.
+- Save either your current location to a place or pick the location on the map.
+- Everything is stored locally so the data is persistent.
 
 ### Screenshots 
 <div align="center">
