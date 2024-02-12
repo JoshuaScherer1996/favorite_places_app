@@ -20,11 +20,11 @@ Favorite Places is a Flutter app that allows you to keep track of your favorite 
   <img src="allowing_location.png" alt="Using the device's camera to take a picture" width="200"/>
   <img src="loading_location.png" alt="Using the device's camera to take a picture" width="200"/>
   <img src="form_filled.png" alt="Example location form filled out" width="200"/>
-</div>
-
-### Example walkthrough
-<div align="center">
-  <img src="walkthrough.gif" alt="Walkthrough" width="200"/>
+  <img src="filled_locations.png" alt="Start screen filled with saved up locations" width="200"/>
+  <img src="place_detail_screen.png" alt="Detail screen for a place" width="200"/>
+  <img src="location_detail.png" alt="Showing the location on a map" width="200"/>
+  <img src="map_picking_location.png" alt="Showing a map where the user can pick a location" width="200"/>
+  <img src="map_location_picked" alt="A location picked on the map screen" width="200"/>
 </div>
 
 ## Topics covered 
