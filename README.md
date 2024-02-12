@@ -24,7 +24,7 @@ Favorite Places is a Flutter app that allows you to keep track of your favorite 
   <img src="place_detail_screen.png" alt="Detail screen for a place" width="200"/>
   <img src="location_detail.png" alt="Showing the location on a map" width="200"/>
   <img src="map_picking_location.png" alt="Showing a map where the user can pick a location" width="200"/>
-  <img src="map_location_picked" alt="A location picked on the map screen" width="200"/>
+  <img src="map_location_picked.png" alt="A location picked on the map screen" width="200"/>
 </div>
 
 ## Topics covered 
